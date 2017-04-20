@@ -9,27 +9,25 @@ import android.util.Log;
 import com.enterpriseandroid.restfulsprites.BuildConfig;
 import com.enterpriseandroid.restfulsprites.R;
 
-/**
- * App stuff, some changes made by Richard Barney
- */
+
 public class SpritesApplication extends Application
     implements SharedPreferences.OnSharedPreferenceChangeListener
 {
     private static final String TAG = "APP";
 
-    private static final String EMULATOR_HOST_IP = "localhost"; // change to localhost
+    private static final String EMULATOR_HOST_IP = "10.70.200.61"; // localhost
     private static final String APPENGINE_HOST = "your_app_id_here.appspot.com";
     private static final String LOCAL_APPENGINE_HOST = EMULATOR_HOST_IP;
 
-    private static final String SPRING_SERVICE = "/SpriteDB/webresources"; // change to correct URL
+    private static final String SPRING_SERVICE = "/SpriteDB/webresources"; // URL
     private static final String SPRING_SYNC_SERVICE = "/springSyncServiceContacts";
     private static final String AWS_SERVICE = "/awsServiceContacts";
-    private static final String APP_ENGINE_SERVICE = ""; // no app context for appspot.com
+    private static final String APP_ENGINE_SERVICE = ""; //
 
     private static final String TEST_PORT = "8080";
-    private static final String HTTP_DEFAULT_PORT = ""; // will be 80
+    private static final String HTTP_DEFAULT_PORT = ""; // 80
 
-    private static final String SPRITES = "/entities.sprite"; // change to correct URL
+    private static final String SPRITES = "/entities.sprite"; //
 
     private static final String HTTP = "http";
     private static final String HTTPS = "https";
